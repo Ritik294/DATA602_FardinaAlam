@@ -3,72 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DATA602: Principles of Data Science</title>
+    <title>Welcome to DATA602 Principles of Data Science</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
+            max-width: 1200px;
+            margin: auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
         h1 {
-            color: #333;
+            margin: 0;
         }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
         footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
-            background: #333;
-            color: #fff;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .content {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to DATA602: Principles of Data Science</h1>
+        <p>Course taught by Professor Fardina Alam</p>
     </header>
-    <main>
-        <div class="container">
-            <h2>About This Course</h2>
-            <p>DATA602 provides a comprehensive introduction to the core principles of data science. This course covers essential topics such as statistical analysis, data processing, and machine learning techniques. As part of this course, we will explore various methods to extract actionable insights from complex datasets and understand the impact of data science in different industries.</p>
-            
-            <h2>Why Data Science?</h2>
-            <p>Data science is a rapidly evolving field that combines statistics, computer science, and domain knowledge to solve real-world problems. Understanding the principles of data science is crucial for making data-driven decisions, optimizing operations, and driving innovation. This course aims to build a strong foundation in these principles to help students apply them effectively in their future careers.</p>
 
-            <h2>Course Objectives</h2>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Syllabus</a>
+            <a href="#">Resources</a>
+            <a href="#">Assignments</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="content">
+            <h2>About the Course</h2>
+            <p>Welcome to the DATA602 Principles of Data Science course. This course will cover essential topics in data science, including data collection, processing, analysis, and visualization. Students will gain hands-on experience with tools like Python, R, and SQL, and explore statistical methods, machine learning algorithms, and data-driven decision-making techniques.</p>
+            <p>Course Objectives:</p>
             <ul>
-                <li>Gain a deep understanding of data analysis and visualization techniques.</li>
-                <li>Learn to apply statistical methods to real-world data.</li>
-                <li>Explore machine learning algorithms and their applications.</li>
-                <li>Develop skills to work with large datasets and make data-driven decisions.</li>
+                <li>Understand the fundamental principles of data science and its applications.</li>
+                <li>Learn how to clean, process, and visualize data effectively.</li>
+                <li>Apply statistical methods and machine learning techniques to solve real-world problems.</li>
+                <li>Develop critical thinking skills to approach data-driven challenges.</li>
             </ul>
-
-            <h2>Resources and Projects</h2>
-            <p>Throughout the course, students will have access to various resources, including textbooks, online tutorials, and project examples. These resources will help reinforce the concepts learned and provide practical experience in applying data science techniques.</p>
+            <p>This course is designed for both beginners and those with some experience in data science. By the end of the semester, you'll have a solid foundation in data science principles and be well-prepared to tackle more advanced topics in the field.</p>
         </div>
-    </main>
+    </div>
+
     <footer>
-        <p>&copy; 2024 DATA602 Principles of Data Science. All rights reserved.</p>
+        <p>© 2024 University of Maryland - All Rights Reserved</p>
     </footer>
 </body>
 </html>
